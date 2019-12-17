@@ -6,8 +6,8 @@
 </template>
 
 <script>
-    import HeaderBlock from "./_components/Header"
-    import ContentBlock from "./_components/Content"
+    import HeaderBlock from "../components/Header"
+    import ContentBlock from "../components/_components/Content"
     export default {
         name: "Home",
         components: { HeaderBlock, ContentBlock}

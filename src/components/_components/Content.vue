@@ -10,13 +10,32 @@
             <p>
                 В дальнейшем разместить данный проект на хостинг. И поддерживать и развивать. Добавляю посты и другие проекты.
             </p>
+            <div v-for="post in posts" :key="post.id">
+                <post :post="post"></post>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
+    import Post from '../Post'
     export default {
-        name: "Content"
+        name: "Content",
+        components: { Post },
+        data: function () {
+            return {
+                posts: [
+                    {
+                        id: 1,
+                        title: 'Test'
+                    },
+                    {
+                        id: 2,
+                        title: 'Test Test'
+                    }
+                ]
+            }
+        }
     }
 </script>
 
