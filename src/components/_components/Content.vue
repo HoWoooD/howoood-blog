@@ -10,8 +10,13 @@
             <p>
                 В дальнейшем разместить данный проект на хостинг. И поддерживать и развивать. Добавляю посты и другие проекты.
             </p>
-            <div v-for="post in posts" :key="post.id">
-                <post :post="post"></post>
+            <p>
+                <b>21.11.20</b> Сегодня понял, что знаний html, css не хватает для быстрой верстки. Из-за отсутствия практики все забыл. Прохожу бесплатный курс по основам.
+            </p>
+            <div class="posts_wrapper">
+                <div v-for="post in posts" :key="post.id">
+                    <post :post="post"></post>
+                </div>
             </div>
         </div>
     </div>
@@ -26,12 +31,16 @@
             return {
                 posts: [
                     {
+                        id: 3,
+                        title: 'Повторить HTMl,CSS'
+                    },
+                    {
                         id: 1,
-                        title: 'Test'
+                        title: 'Изучение основ Vue.js'
                     },
                     {
                         id: 2,
-                        title: 'Test Test'
+                        title: 'Изучение Vuex'
                     }
                 ]
             }
@@ -46,12 +55,12 @@
         width: 100%;
     }
     .content {
-        width: 666px;
-        height: 666px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        width: 50%;
         background: #FFFFFF;
         margin: 20px 0;
         padding: 16px;
+    }
+    .posts_wrapper {
+
     }
 </style>

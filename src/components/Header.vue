@@ -26,22 +26,24 @@
         display: flex;
         height: 60px;
         width: 100%;
-        background: #000000;
+        border: 1px solid #CECECE;
         align-items: center;
     }
     .logo {
         font-size: 20px;
         font-weight: bold;
-        color: #FFFFFF;
+        color: #000000;
         margin-left: 16px;
+        cursor: pointer;
     }
     .menu {
         display: flex;
         margin-left: auto;
         margin-right: 16px;
-        color: #FFFFFF;
+        color: #000000;
     }
     .menu__item {
-        margin-left: 8px;
+        margin-left: 24px;
+        cursor: pointer;
     }
 </style>
