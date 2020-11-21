@@ -20,5 +20,6 @@ export default {
    font-family: Arial, sans-serif;
    background: #FFFFFF;
    margin: 0;
+   font-size: 20px;
  }
 </style>

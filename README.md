@@ -1,5 +1,7 @@
 # howoood-blog
 
+This project created for learn frontend tools: HTML, CSS, JS, Vue.JS, Webpack. 
+
 ## Project setup
 ```
 npm install
