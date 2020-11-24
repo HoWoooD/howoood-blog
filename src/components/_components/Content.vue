@@ -14,8 +14,8 @@
                 <b>21.11.20</b> Сегодня понял, что знаний html, css не хватает для быстрой верстки. Из-за отсутствия практики все забыл. Прохожу бесплатный курс по основам.
             </p>
             <div class="posts_wrapper">
-                <div v-for="post in posts" :key="post.id">
-                    <post :post="post"></post>
+                <div v-for="card in cards" :key="card.id">
+                    <post :card="card"></post>
                 </div>
             </div>
         </div>
@@ -23,13 +23,13 @@
 </template>
 
 <script>
-    import Post from '../Post'
+    import Post from '../Card'
     export default {
         name: "Content",
         components: { Post },
         data: function () {
             return {
-                posts: [
+                cards: [
                     {
                         id: 3,
                         title: 'Повторить HTMl,CSS'
