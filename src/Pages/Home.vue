@@ -1,14 +1,15 @@
 <template>
-    <div class="content">
+    <layout>
         <content-block></content-block>
-    </div>
+    </layout>
 </template>
 
 <script>
     import ContentBlock from "../components/_components/Content";
+    import Layout from "../components/Layout";
     export default {
         name: "Home",
-        components: {ContentBlock}
+        components: {Layout, ContentBlock}
     }
 </script>
 
